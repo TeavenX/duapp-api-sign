@@ -1,4 +1,4 @@
-# duapp-api-sign 毒APP接口签名算法分析
+# duapp-api-sign 毒APP newSign算法分析
 毒APP主要使用`sign`和`newSign`两个参数来对url进行验签，下面是首页推荐接口的请求：
 ```
 GET https://app.poizon.com/api/v1/app/index/ice/shopping?lastId=&limit=20&newSign=3b799d62162b6ce9101f2b4eecee2e46](https://app.poizon.com/api/v1/app/index/ice/shopping?lastId=&limit=20&newSign=3b799d62162b6ce9101f2b4eecee2e46 HTTP/1.1

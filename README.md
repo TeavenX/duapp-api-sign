@@ -26,4 +26,6 @@ Cookie: duToken=d41d8cd9%7C71979198%7C1573801295%7C82764f7dbf13b384
 5. 在字符串末尾拼接一个常量字符串
 6. 计算字符串的md5
 ![屏幕快照 2019-11-15 下午6.03.25.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDc3NDk5Mi1kODg4ZDJjZGU5MjkyOTJiLnBuZw?x-oss-process=image/format,png)  
-毒APP API的签名参数计算流程就这样，对细节感兴趣的朋友可以私下[联系](http://47.105.95.219)。
+`newSign`的计算方法跟`sign`比较相似，只是最后是先对构建的字符串AES加密，然后再计算md5，加密部分是在`libJNIEncrypt.so`中实现。
+![屏幕快照 2019-11-25 上午10.32.58.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNDc3NDk5Mi1iNTliMzUzMzAwMTM1Njg3LnBuZw?x-oss-process=image/format,png)     
+毒APP API的签名参数计算流程就这样，对细节感兴趣的朋友可以[联系](http://47.105.95.219)。
